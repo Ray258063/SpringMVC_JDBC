@@ -16,7 +16,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-
+    //get student
     @GetMapping("/students")
     public String test(){
         return "test sucess";
