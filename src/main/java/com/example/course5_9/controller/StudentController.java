@@ -16,12 +16,13 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-
+    //get student
     @GetMapping("/students")
     public String test(){
         return "test sucess";
     }
 
+    //get student by id
     @GetMapping("/students/{studentId}")
     public Student select(@PathVariable Integer studentId){
         return studentService.getById(studentId);
